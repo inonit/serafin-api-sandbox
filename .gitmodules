@@ -1,0 +1,3 @@
+[submodule "serafin-docker-python-sandbox"]
+	path = serafin-docker-python-sandbox
+	url = git@github.com:inonit/serafin-docker-python-sandbox.git

@@ -1,6 +1,6 @@
-This is a sample API using the [Docker Python Sandbox](https://github.com/inonit/docker-python-sandbox) library. Fork of code-execution-api-demo : https://github.com/christophetd/code-execution-api-demo
+This is a sample API using the [Docker Python Sandbox](https://github.com/inonit/docker-python-sandbox) library. Fork from code-execution-api-demo : https://github.com/christophetd/code-execution-api-demo
 
-API will use the edited lib https://github.com/inonit/serafin-docker-python-sandbox as a submodule in order to use send data to manipulate in python sandbox.
+API will use the edited lib https://github.com/inonit/serafin-docker-python-sandbox as a submodule in order to send data, input argument to manipulate, in python scripts.
 
 ## Requirements
 
@@ -11,11 +11,14 @@ API will use the edited lib https://github.com/inonit/serafin-docker-python-sand
 ## Installation
 
 - Clone this repository
+- Git submodule init
 - Pull the docker image used by the sandbox: `docker pull serafin/docker_python_sandbox`
+  or build the image from the script serafin-docker-python-sandbox/container/build.sh
 - Copy the sample configuration file: `cp api/config.js.sample api/config.js`
+- Set variables in config.js (must be done for production version, api-key,allowed ips...)
 - Run `npm start`
 - Navigate to `http://server-ip:3000`
-- Enjoy!
+
 
 ## API endpoints (configurable)
 
@@ -38,9 +41,9 @@ localhost:3000/compile
 
 {
  "isError":false,
+ "timedOut": false,
  "stderr":"",
  "stdout":"Hello, world!\n",
- "combined":"Hello, world!\n",
  "killedByContainer":false
  }
 ```
