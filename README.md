@@ -12,6 +12,7 @@ API will use the edited lib https://github.com/inonit/serafin-docker-python-sand
 
 - Clone this repository
 - Git submodule init
+- Git submodule update
 - Pull the docker image used by the sandbox: `docker pull serafin/docker_python_sandbox`
   or build the image from the script serafin-docker-python-sandbox/container/build.sh
 - Copy the sample configuration file: `cp api/config.js.sample api/config.js`
