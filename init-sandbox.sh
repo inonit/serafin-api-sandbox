@@ -6,7 +6,7 @@
 
 case $1 in 
   start)
-    cd serafin-api-sandbox/serafin-docker-python-sandbox/container
+    cd serafin-docker-python-sandbox/container
     ./build.sh
   ;;
 
