@@ -4,7 +4,7 @@
 # Feel free to modify this script. It will be used
 # by systemd.
 
-case $i in 
+case $1 in 
   start)
     cd serafin-api-sandbox/serafin-docker-python-sandbox/container
     ./build.sh
