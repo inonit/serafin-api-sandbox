@@ -6,7 +6,9 @@
 
 case $i in 
   start)
-    docker pull serafin/docker_python_sandbox:latest
+    cd serafin-api-sandbox/serafin-docker-python-sandbox/container
+    ./build.sh
+    cd
     exec npm start
   ;;
   *)
