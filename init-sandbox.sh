@@ -6,11 +6,11 @@
 
 case $1 in 
   start)
-    pushd serafin-docker-python-sandbox/container
+    cd serafin-docker-python-sandbox/container
     ./build.sh
   ;;
 
 esac
 
-popd
+cd
 /usr/bin/npm $1
