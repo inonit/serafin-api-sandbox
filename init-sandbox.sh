@@ -8,11 +8,8 @@ case $1 in
   start)
     cd serafin-api-sandbox/serafin-docker-python-sandbox/container
     ./build.sh
-    cd
-    exec npm start
-  ;;
-  *)
-    exec npm $
   ;;
 
 esac
+
+/usr/bin/npm $1
